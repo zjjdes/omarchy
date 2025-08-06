@@ -48,7 +48,7 @@ show_logo decrypt 920
 show_subtext "Installing terminal tools [2/5]"
 source $OMARCHY_INSTALL/development/terminal.sh
 source $OMARCHY_INSTALL/development/development.sh
-source $OMARCHY_INSTALL/development/nvim.sh
+# source $OMARCHY_INSTALL/development/nvim.sh
 source $OMARCHY_INSTALL/development/ruby.sh
 source $OMARCHY_INSTALL/development/docker.sh
 source $OMARCHY_INSTALL/development/firewall.sh
@@ -67,7 +67,7 @@ source $OMARCHY_INSTALL/desktop/printer.sh
 # Apps
 show_logo expand
 show_subtext "Installing default applications [4/5]"
-source $OMARCHY_INSTALL/apps/webapps.sh
+# source $OMARCHY_INSTALL/apps/webapps.sh
 source $OMARCHY_INSTALL/apps/xtras.sh
 source $OMARCHY_INSTALL/apps/mimetypes.sh
 

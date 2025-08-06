@@ -8,7 +8,7 @@ gtk-update-icon-cache ~/.local/share/icons/hicolor &>/dev/null
 # Copy .desktop declarations
 mkdir -p ~/.local/share/applications
 cp ~/.local/share/omarchy/applications/*.desktop ~/.local/share/applications/
-cp ~/.local/share/omarchy/applications/hidden/*.desktop ~/.local/share/applications/
+# cp ~/.local/share/omarchy/applications/hidden/*.desktop ~/.local/share/applications/
 
 # Only copy xtras if user is not in bare mode
 if [[ ! -f ~/.local/state/omarchy/bare.mode ]] && [ -z "$OMARCHY_BARE" ]; then
