@@ -4,8 +4,11 @@ yay -S --noconfirm --needed \
   brightnessctl playerctl pamixer wiremix wireplumber \
   fcitx5 fcitx5-gtk fcitx5-qt wl-clip-persist \
   nautilus sushi ffmpegthumbnailer gvfs-mtp \
-  mpv evince
-  # chromium imv slurp satty
+  slurp satty
+  # mpv evince imv \
+  # chromium
+
+sudo pacman -S --needed --noconfirm evince vlc vlc-plugins-all loupe brave
 
 # Add screen recorder based on GPU
 if lspci | grep -qi 'nvidia'; then

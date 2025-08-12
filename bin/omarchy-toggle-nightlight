@@ -2,13 +2,7 @@
 
 # Default temperature values
 ON_TEMP=4000
-OFF_TEMP=6000
-
-# Ensure hyprsunset is running
-if ! pgrep -x hyprsunset; then
-  setsid uwsm app -- hyprsunset &
-  sleep 1 # Give it time to register
-fi
+OFF_TEMP=6500
 
 # Query the current temperature
 CURRENT_TEMP=$(hyprctl hyprsunset temperature 2>/dev/null | grep -oE '[0-9]+')
@@ -28,3 +22,4 @@ else
   notify-send "   Daylight screen temperature"
   restart_nightlighted_waybar
 fi
+

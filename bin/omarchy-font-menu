@@ -1,7 +1,5 @@
 #!/bin/bash
 
-~/.local/share/omarchy/bin/omarchy-show-logo
-
 font=$(
   fc-list :spacing=100 -f "%{family[0]}\n" |
     grep -v -i -E 'emoji|signwriting' |
@@ -12,5 +10,3 @@ font=$(
 if [[ -n "$font" ]]; then
   sed -i "s/family = \".*\"/family = \"$font\"/g" ~/.config/alacritty/alacritty.toml
 fi
-
-~/.local/share/omarchy/bin/omarchy-show-done
